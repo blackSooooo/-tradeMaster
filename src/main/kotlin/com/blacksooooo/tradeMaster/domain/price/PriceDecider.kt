@@ -1,6 +1,5 @@
 package com.blacksooooo.tradeMaster.domain.price
 
-import org.slf4j.LoggerFactory
 import kotlin.math.ceil
 import kotlin.math.floor
 
@@ -16,8 +15,6 @@ object PriceDecider {
     private const val UNDER_200_000_PRICE_TICK = 100
     private const val UNDER_500_000_PRICE_TICK = 500
     private const val OVER_500_000_PRICE_TICK = 1_000
-    private val logger = LoggerFactory.getLogger(javaClass)
-
 
     /**
      * 상한가의 경우, 시초가 대비 1.3을 곱하고 내림 가격을 return 한다.
